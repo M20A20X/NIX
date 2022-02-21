@@ -2,10 +2,15 @@ body {
     margin: 0;
 }
 
-* {
-    outline: none;
-    border: none;
+div,
+section {
     box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 img {
@@ -23,9 +28,6 @@ a {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
     margin: 0;
 }

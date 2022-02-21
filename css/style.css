@@ -1,3 +1,119 @@
 @import url('./styles/null.css');
 @import url('./styles/fonts.css');
 @import url('./styles/theme.css');
+
+/* Header */
+
+header {
+    display: flex;
+    padding: 0 var(--content-h-padding);
+    height: 5.2vw;
+    max-height: 100px;
+}
+
+header .logo {
+    position: relative;
+    padding: 0 0.855%;
+    width: 17.09%;
+    background-color: var(--cyan);
+}
+
+nav {
+    margin-left: auto;
+    width: 47.01%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.45%;
+    height: 100%;
+}
+
+nav li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 0.9275em;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+nav li.underline-red::after {
+    top: 95%;
+    height: 5%;
+}
+
+header .contact {
+    display: flex;
+    align-items: center;
+    padding: 2.56%;
+    width: 18.8%;
+    border-right: var(--border);
+    border-left: var(--border);
+}
+
+header .contact .phone-icon {
+    margin-right: 9.375%;
+    width: 14.375%;
+}
+
+header .contact .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 0.875em;
+    color: var(--gray-lighter-1);
+}
+
+header .contact .number {
+    font-size: 1.125em;
+    font-family: "Roboto";
+    color: var(--red);
+    font-weight: 700;
+}
+
+header .search {
+    padding: 2.56%;
+    width: 6.92%;
+    border-right: var(--border);
+}
+
+
+/* Other */
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1920px;
+    font-family: "Roboto";
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.link {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.underline-red::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0.52vw;
+    max-height: var(--underline-max-height);
+    background-color: var(--red);
+}

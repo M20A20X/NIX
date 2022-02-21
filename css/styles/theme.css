@@ -1,0 +1,49 @@
+:root {
+    --black: rgb(35, 31, 32);
+    --gray: rgb(51, 51, 51);
+    --gray-lighter-0: rgb(153, 153, 153);
+    --gray-lighter-1: rgb(186, 186, 186);
+    --gray-lighter-2: rgb(226, 226, 226);
+    --gray-lighter-3: rgb(239, 239, 239);
+    --red: rgb(190, 30, 45);
+    --cyan: rgb(0, 140, 230);
+    --blue-darker-1: rgb(44, 57, 76);
+    --blue-darker-0: rgb(46, 59, 78);
+    --blue: rgb(0, 53, 87);
+    --blue-lighter-0: rgb(77, 88, 104);
+    --blue-lighter-1: rgb(93, 113, 136);
+    --card-0: rgb(248, 246, 233);
+    --card-1: rgb(242, 245, 247);
+    --card-2: rgb(242, 239, 201);
+    --card-3: rgb(242, 242, 242);
+    --card-4: rgb(238, 234, 223);
+    --content-h-padding: 19.53%;
+    --border: 0.0625em solid var(--gray-lighter-3);
+    --border-radius: 0.3125em;
+    --item-box-shadow: 0 0.125em 0.1875em 0 rgba(6, 7, 7, 0.35);
+    --text-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    font-size: 3.25em;
+    font-weight: 900;
+    line-height: 0.8;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+}
+
+h2 {
+    font-size: 2.25em;
+    color: var(--blue);
+    font-weight: 700;
+    line-height: 0.8;
+}
+
+h3 {
+    font-size: 1.125em;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 0.9;
+}

@@ -252,6 +252,24 @@ section.welcome h2 {
 }
 
 
+/* Contact Us */
+
+section.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--content-h-padding);
+    height: 5.2vw;
+    max-height: 100px;
+    background-color: var(--cyan);
+}
+
+section.contact-us .info {
+    font-size: 1.375em;
+    color: #fff;
+}
+
+
 /* Other */
 
 .wrapper {

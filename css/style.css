@@ -134,6 +134,41 @@ header .search {
 }
 
 
+/* About */
+
+section.about {
+    position: relative;
+    padding: 0 var(--content-h-padding);
+    height: 41.67vw;
+    max-height: 800px;
+    background: url("./src/images/about/main.png");
+    background-size: cover;
+}
+
+section.about .block {
+    position: absolute;
+    top: 39.375%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 34.635%;
+    height: 36.875%;
+}
+
+section.about .info {
+    font-size: 1.125em;
+    color: #fff;
+    line-height: 2;
+    text-shadow: var(--text-shadow);
+}
+
+section.about .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 57.14%;
+}
+
+
 /* Other */
 
 .wrapper {
@@ -167,4 +202,39 @@ header .search {
     height: 0.52vw;
     max-height: var(--underline-max-height);
     background-color: var(--red);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.85vw;
+    max-width: 170px;
+    height: 2.34vw;
+    max-height: 45px;
+    background-color: var(--cyan);
+    border-radius: var(--border-radius);
+    box-shadow: var(--item-box-shadow);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-danger {
+    background-color: var(--red);
+    color: #fff;
+}
+
+.btn-danger-inv {
+    background-color: #fff;
+    color: var(--red);
+}
+
+.btn-info {
+    background-color: var(--cyan);
+    color: #fff;
+}
+
+.btn-info-inv {
+    background-color: #fff;
+    color: var(--cyan);
 }

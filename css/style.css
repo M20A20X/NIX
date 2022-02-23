@@ -106,8 +106,8 @@ header .contact {
     align-items: center;
     padding: 2.56%;
     width: 18.8%;
-    border-right: var(--border);
-    border-left: var(--border);
+    border-right: var(--border) var(--gray-lighter-3);
+    border-left: var(--border) var(--gray-lighter-3);
 }
 
 header .contact .phone-icon {
@@ -136,7 +136,7 @@ header .search {
     position: relative;
     padding: 2.56%;
     width: 6.92%;
-    border-right: var(--border);
+    border-right: var(--border) var(--gray-lighter-3);
 }
 
 
@@ -383,7 +383,6 @@ section.our-clients .card .hover .info {
 
 section.our-clients .card .hover .title {
     font-size: 1.125em;
-    font-weight: 700;
 }
 
 section.our-clients .card:hover .hover {
@@ -696,6 +695,155 @@ section.hosting .card.tabs .underline-red::after {
 }
 
 
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 37.34vw;
+    max-height: 717px;
+    background-color: var(--blue-darker-0);
+    color: #fff;
+}
+
+footer .brands {
+    display: flex;
+    padding: 0 var(--content-h-padding);
+    height: 13.94%;
+}
+
+footer .brands .image {
+    position: relative;
+}
+
+footer .brands .image::before,
+footer .brands .image:last-of-type:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 50%;
+    border-left: var(--border);
+    border-color: inherit;
+}
+
+footer .brands .image:last-of-type:after {
+    left: 100%;
+}
+
+footer .main {
+    position: relative;
+    flex-grow: 1;
+    padding: 5.2% var(--content-h-padding);
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+footer .main ul {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    height: 100%;
+}
+
+footer .main .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .main .column .title {
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+footer .main .column .underline-red::after {
+    top: 171.43%;
+    width: 2.6vw;
+    max-width: 50px;
+}
+
+footer .main .column .info {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 12.82%;
+    height: 74.13%;
+    font-size: 0.9275em;
+    font-weight: 400;
+    color: var(--gray-lighter-2);
+    line-height: 1.6;
+    word-break: break-all;
+}
+
+footer .main .data-cloud .info,
+footer .main .newsletter .info {
+    padding: 0;
+}
+
+footer .main .data-cloud {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 29.49%;
+}
+
+footer .main .data-cloud .contact {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 18.01% 5.12%;
+    height: 47.23%;
+    word-break: keep-all;
+}
+
+footer .main .newsletter .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 44.68%;
+}
+
+footer .main .newsletter .text-input {
+    padding-left: 5.13%;
+    height: 42.86%;
+    background-color: var(--blue-lighter-0);
+}
+
+footer .main .newsletter .text-input::placeholder {
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.651);
+}
+
+footer .main .newsletter .submit {
+    cursor: pointer;
+}
+
+footer .main .to-top {
+    position: absolute;
+    right: 1.3%;
+    bottom: 3.29%;
+    padding: 0.68%;
+    width: 2.19%;
+    height: 7.74%;
+    background-color: var(--red);
+    border-radius: var(--border-radius);
+}
+
+footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--content-h-padding);
+    height: 13.94%;
+    background-color: var(--blue-darker-1);
+}
+
+footer .copyright .heart {
+    color: var(--red);
+}
+
+
 /* Other */
 
 .wrapper {
@@ -736,16 +884,6 @@ section.hosting .card.tabs .underline-red::after {
     width: 100%;
     height: 0.26vw;
     max-height: 5px;
-    max-height: var(--underline-max-height);
-}
-
-.underline-gray::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 0.52vw;
     max-height: var(--underline-max-height);
 }
 

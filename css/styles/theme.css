@@ -18,7 +18,7 @@
     --card-3: rgb(242, 242, 242);
     --card-4: rgb(238, 234, 223);
     --content-h-padding: 19.53%;
-    --border: 0.0625em solid var(--gray-lighter-3);
+    --border: 0.0625em solid;
     --border-radius: 0.3125em;
     --item-box-shadow: 0 0.125em 0.1875em 0 rgba(6, 7, 7, 0.35);
     --text-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.35);
